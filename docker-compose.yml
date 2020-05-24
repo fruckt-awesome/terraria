@@ -1,0 +1,14 @@
+version: '3.2'
+
+services:
+  terraria:
+    container_name: terraria    
+    image: fruckt/terraria:1.4.0.4
+#    restart: always
+    ports:
+      - 7777:7777
+    volumes:
+       - /home/terraria/world:/home/terraria/world
+    hostname: terraria
+    stdin_open: true
+    tty: true
